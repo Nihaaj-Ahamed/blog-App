@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minimal Blog - Discover Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extra-styles.css">
+  <script defer src="home.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html" style="text-decoration: none;">
+          <h1 class="navbar-title"> Blog <span style="color: brown;">box</span></h1>
+        </a>
+      </div>
+      <div id="authArea" class="navbar-auth"></div>
+      <a href="dashboard.html" id="dashboardLink" class="nav-dashboard-btn" style="display: none;">My Dashboard</a>
+      
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Discover Stories</h1>
+      <p>Explore amazing blogs from our community</p>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search blogs...">
+        <button id="searchBtn">🔍</button>
+      </div>
+    </section>
+
+    <section class="blog-list">
+      <div class="list-header">
+        <h2>Latest Posts</h2>
+      </div>
+      <div id="blogsList" class="blogs-grid">
+        <p>Loading blogs...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About Platform</h4>
+        <p>&copy; 2025 Minimal Blog. A beautiful platform for sharing stories.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Developer</h4>
+        <p><strong>MS Nihaaj Ahamed</strong></p>
+        <p>📧 <a href="mailto:nihaajahamed@gmail.com">nihaajahamed@gmail.com</a></p>
+        <p>📱 <a href="tel:+94759896910">0759896910</a></p>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="https://nihaaj-ahamed.github.io/Nihaaj-portfolio/" target="_blank">🌐 Portfolio</a></li>
+          <li><a href="https://lk.linkedin.com/in/nihaaj-ahamed-911177306" target="_blank">💼 LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Minimal Blog Platform. Built with  by MS Nihaaj Ahamed</p>
+    </div>
+  </footer>
+</body>
+</html>
+

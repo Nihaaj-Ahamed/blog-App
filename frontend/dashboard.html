@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Writer Dashboard - Minimal Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="extra-styles.css">
+  <script defer src="dashboard.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <a href="index.html" style="text-decoration: none;">
+          <h1 class="navbar-title"> Blog <span style="color: brown;">box</span></h1>
+        </a>
+      </div>
+      <div id="authArea" class="navbar-auth"></div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="dashboard-header">
+      <h1> My Dashboard</h1>
+      <a href="index.html" class="btn-secondary">← Back Home</a>
+    </div>
+
+    <section class="dashboard-editor">
+      <h2>Create / Edit Blog Post</h2>
+      <form id="editorForm">
+        <input type="hidden" id="postId">
+        
+        <div class="form-group">
+          <label for="title">Blog Title</label>
+          <input type="text" id="title" placeholder="Enter an engaging title..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="content">Blog Content</label>
+          <textarea id="content" rows="10" placeholder="Write your amazing story here..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary"> Publish</button>
+          <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="dashboard-posts">
+      <h2>Your Posts</h2>
+      <div id="userPostsList" class="posts-table-container">
+        <p>Loading your posts...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Minimal Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
